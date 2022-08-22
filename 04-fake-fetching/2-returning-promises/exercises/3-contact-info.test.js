@@ -9,7 +9,7 @@ const { log } = labeledLogger();
 /**
  *
  */
-const contactInfo = () => {};
+const contactInfo = (id=1) => fetchUserById(id).then((user) => [user.email, user.phone, user.website])
 
 // --- test function ---
 
